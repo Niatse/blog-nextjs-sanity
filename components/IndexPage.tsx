@@ -21,6 +21,8 @@ export default function IndexPage(props: IndexPageProps) {
 
   return (
     <>
+    
+ 
       <IndexPageHead settings={settings} />
 
       <Layout preview={preview} loading={loading}>
