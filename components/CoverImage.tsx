@@ -19,8 +19,8 @@ export default function CoverImage(props: CoverImageProps) {
       })}
     >
       <Image
-        className="h-auto w-full"
-        width={2000}
+        className="h-auto w-auto"
+        width={1500}
         height={1000}
         alt={`Cover Image for ${title}`}
         src={urlForImage(source).height(1000).width(2000).url()}
