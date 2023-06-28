@@ -25,8 +25,6 @@ export default function IndexPageHead({ settings }: IndexPageHeadProps) {
         name="description"
         content={toPlainText(description)}
       />
-
-      <meta name="google-site-verification" content="4gHtY5QVb0_uijPBY047FuV9BP0SuiM6rKMbEppZV3A" />
       <meta
         property="og:image"
         // Because OG images must have a absolute URL, we use the
@@ -37,9 +35,6 @@ export default function IndexPageHead({ settings }: IndexPageHeadProps) {
           process.env.VERCEL_URL ? 'https://' + process.env.VERCEL_URL : ''
         }/api/og?${new URLSearchParams({ title: ogImageTitle })}`}
       />
-
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4263718599763691"
-     crossOrigin="anonymous"></script>
     </Head>
   )
 }
