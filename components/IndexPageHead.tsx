@@ -25,11 +25,8 @@ export default function IndexPageHead({ settings }: IndexPageHeadProps) {
         name="description"
         content={toPlainText(description)}
       />
-<<<<<<< HEAD
-      
-=======
+
       <meta name="google-site-verification" content="4gHtY5QVb0_uijPBY047FuV9BP0SuiM6rKMbEppZV3A" />
->>>>>>> dd8d254b7a0ddbb6886c75ea57b8533bc42f8704
       <meta
         property="og:image"
         // Because OG images must have a absolute URL, we use the
