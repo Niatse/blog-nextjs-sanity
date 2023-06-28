@@ -39,7 +39,7 @@ export default function IndexPageHead({ settings }: IndexPageHeadProps) {
       />
 
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4263718599763691"
-     crossorigin="anonymous"></script>
+     crossOrigin="anonymous"></script>
     </Head>
   )
 }
