@@ -14,19 +14,20 @@ export default function CoverImage(props: CoverImageProps) {
   const { title, slug, image: source, priority } = props
   const image = source?.asset?._ref ? (
     <div
-      className={cn('shadow-small', {
-        'transition-shadow duration-200 hover:shadow-medium': slug,
-      })}
+     
     >
-      <Image
-        className="h-auto w-auto"
-        width={1500}
-        height={1000}
+        <div className="w-full overflow-hidden relative" style={{ height: '40vh' , width: 'auto' }}>
+         <Image
+      layout="fill" 
+      objectFit="cover"
+    
         alt={`Cover Image for ${title}`}
         src={urlForImage(source).height(1000).width(2000).url()}
         sizes="100vw"
         priority={priority}
       />
+    </div>
+    
     </div>
   ) : (
     <div style={{ paddingTop: '50%', backgroundColor: '#ddd' }} />
